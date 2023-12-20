@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- <div class="scores"><a href="highscores.html">View Highscores</a></div> -->
+    <div class="timer">Time:   <p id="timer">120</p> </var><span id="time"> </span>  </div> 
+
+
+    <div class="wrapper">
+      <!-- First screen start screen -->
+      <div id="start-screen" class="start">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by ten seconds!
+        </p>
+        <button onclick="startCountdown()" id="start">Start Quiz</button>
+        <!-- First screen start screen -->
+      </div>
+
+
+      <!-- HTML Questions -->
+      <div id="questions" class= "hide">
+
+        <div id="question-1">
+        <h2 id="question-title"> Question 1 </h2>
+        <div>
+          <h1 id = "question1"> Inside which HTML element do we put the JavaScript? </h1>
+          
+           <div id="choices" class="choices">
+          <div id="choices1" class="btn-grid1">
+            <button class="btn" id="a"> "javascript" </button>
+            <button class="btn" id="b">"scripting"</button>
+            <button class="btn" id="c"> "script"</button>
+            <button class="btn" id="d">"js"</button>
+          </div>
+
+          <div id="question-2">
+            <h2 id="question-title"> Question 2 </h2>
+            <div>
+              <h1 id = "question"> Where is the correct place to insert a JavaScript? </h1>
+
+            <div id="choices" class="choices">
+              <div id="choices2" class="btn-grid2">
+                <button class="btn" id="a"> "head and "body" section </button>
+                <button class="btn" id="b">"body" section</button>
+                <button class="btn" id="c"> "head" section </button>
+              </div>
+
+              <div id="question-3">
+                <h2 id="question-title"> Question 3 </h2>
+                <div>
+                  <h1 id = "question"> Where is the correct place to insert a JavaScript? </h1>
+                <div id="choices" class="choices">
+        
+                  <div id="choices3" class="btn-grid3">
+                    <button class="btn" id="a"> True </button>
+                    <button class="btn" id="b">False </button>
+                  </div>
+        </div>
+
+    <p id="message"></p>
+
+        </div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+            <!-- HTML Questions -->
+    </div>
+
+
+
+    <!-- <script src="./assets/js/questions.js"></script> -->
+    <script src="./assets/js/logic.js"></script>
+  </body>
+</html>
